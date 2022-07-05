@@ -32,7 +32,13 @@ class FirestoreCLass {
     }
 
     fun getCurrentUserId():String{
-        return FirebaseAuth.getInstance().currentUser!!.uid
+        // for auto login feature
+        var currentUser= FirebaseAuth.getInstance().currentUser
+        var currentUserId=""
+        if(currentUser!=null){
+            currentUserId=currentUser.uid // get the user id into the currentUserId var if it is not null
+        }
+        return currentUserId //return the user id to splash screen to direct login
     }
 
 }

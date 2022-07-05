@@ -9,6 +9,8 @@ import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
 import com.example.travelguider.R
+import com.example.travelguider.firebase.FirestoreCLass
+import com.example.travelguider.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -43,6 +45,13 @@ class SignInActivity : BaseActivity() {
         toolbar_sign_in_activity.setNavigationOnClickListener{onBackPressed()}
     }
 
+    fun signInSuccess(user: User){
+        hideProgressDialog()
+        startActivity(Intent(this,MainActivity::class.java))
+        finish()
+
+    }
+
     //sign in registered user
     private fun signInRegisteredUser(){
         val email:String=signin_email.text.toString().trim{it<=' '}
@@ -54,9 +63,7 @@ class SignInActivity : BaseActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "createUserWithEmail:success")
-                        startActivity(Intent(this,MainActivity::class.java))
-                        val user = auth.currentUser
-
+                        FirestoreCLass().signInUser(this,)
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "createUserWithEmail:failure", task.exception)

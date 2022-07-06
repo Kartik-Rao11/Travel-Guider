@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/drawable/color_button.xml" value="0.2265" />
+        <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/drawable/nav_header_main_background.xml" value="0.1805" />
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/drawable/white_button.xml" value="0.2265" />
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/activity_base.xml" value="0.1" />
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/activity_getting_started.xml" value="0.22826086956521738" />
@@ -11,7 +12,10 @@
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/activity_sign_up.xml" value="0.176" />
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/app_bar_main.xml" value="0.2" />
         <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/dialog_progress.xml" value="0.152" />
+        <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/main_content.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/kartik/AndroidStudioProjects/TravelGuider/app/src/main/res/layout/nav_header_main.xml" value="0.20854700854700856" />
       </map>
     </option>
   </component>

@@ -20,7 +20,7 @@
             android:theme="@style/NoActionBar"/>
 
         <activity
-            android:name=".BaseActivity"
+            android:name=".activities.BaseActivity"
             android:exported="false" />
         <activity
             android:name=".activities.SignUpActivity"

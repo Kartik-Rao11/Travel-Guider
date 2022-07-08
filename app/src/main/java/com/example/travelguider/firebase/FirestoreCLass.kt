@@ -2,6 +2,7 @@ package com.example.travelguider.firebase
 
 import android.app.Activity
 import com.example.travelguider.activities.MainActivity
+import com.example.travelguider.activities.MyProfileActivity
 import com.example.travelguider.activities.SignInActivity
 import com.example.travelguider.activities.SignUpActivity
 import com.example.travelguider.models.User
@@ -34,6 +35,9 @@ class FirestoreCLass {
                 }
                 is MainActivity->{
                     activity.updateNavigationUserDetails(loggedInUser)
+                }
+                is MyProfileActivity->{
+                    activity.setUserDataInUI(loggedInUser)
                 }
             }
 
